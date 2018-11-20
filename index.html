@@ -13,34 +13,18 @@
     }
 </script>
 <style type="text/css">
-    a.dw:link {color: #FFFFFF;text-decoration:none;font-size: 150%;}		
-    a.dw:visited {color: #FFFFFF;text-decoration:none;font-size: 150%;}	
-    a.dw:hover {color: #FFFFFF;text-decoration:none;font-size: 150%;}	
-    a.dw:active {color: #FFFFFF;text-decoration:none;font-size: 150%;}	
-    a.gz:link {color: #FFFFFF;text-decoration:none;font-size: 14px;}		
-    a.gz:visited {color: #FFFFFF;text-decoration:none;font-size: 14px;}	
-    a.gz:hover {color: #FFFFFF;text-decoration:none;font-size: 14px;}	
-    a.gz:active {color: #FFFFFF;text-decoration:none;font-size: 14px;}	
+    a.dw {color: #FFFFFF;text-decoration:none;font-size: 150%; opacity: 0.75; transition: all 0.2s linear;}
+    a.dw:hover {opacity: 1;}	
+    a.gz {color: #FFFFFF;text-decoration:none;font-size: 14px; opacity: 0.75; transition: all 0.2s linear;}
+    a.gz:hover {opacity: 1;}	
+    .pt {color: #FFFFFF; font-size: 20px; opacity: 0.6; transition: all 0.2s linear;}
+    .pt:hover {opacity: 1;}	
     .imgPlace{position: relative; top: 0px;}   
-    .imgPlace2{position: relative; top: 0px;opacity: 0.75;}   
-    .imgPlace2:hover{position: relative; top: 0px;opacity: 1;} 
-    .imgPlace3{position: relative; top: 0px;opacity: 0.6;}  
-    .imgPlace3:hover{position: relative; top: 0px;opacity: 0.8;} 
-    .imgPlace3:active{position: relative; top: 0px;opacity: 1;}       
-    b.important {
-        color: white;
-        font-size: 12px;
-        }
-    img.image1{ 
-        width:64px; 
-        height:64px; 
-        border-radius:200px; 
-        }
-    hr.hh{
-        opacity: 1;
-        finishopacity: 0; 
-        style: 3;
-        }
+    .imgPlace2{position: relative; top: 0px;opacity: 0.6;transition: all 0.2s linear;}   
+    .imgPlace2:hover{opacity: 1;} 
+    b.important {color: white; font-size: 150%;}
+    .image1{width:64px; height:64px; border-radius:200px; opacity: 0.5; transition: all 0.2s linear;}
+    .image1:hover{opacity: 1;} 
     }
 </style>
 <style>
@@ -49,35 +33,37 @@
         overflow-x: hidden;
     }
     .button {
-        background-color: rgba(255, 255, 255, 0);
-        color: white;
-        border: 2px solid #FFFFFF;   
-        border-radius: 1px;
-        font-size: 200%;
-        text-decoration:none;
+        width: 200px;
+        margin-top: -10px;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        padding-top: 16px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 130%;
+        letter-spacing: 2px;
+        border: 3px solid #FFFFFF;
+        color: #FFFFFF;
+        transition: all 0.3s linear;
     }
     .button:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-        color: white;
-        border: 2px solid #FFFFFF;  
-        border-radius: 1px;
-        font-size: 200%;
-        text-decoration:none;
-    }
-    .button:active {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: white;
-        border: 2px solid #FFFFFF; 
-        border-radius: 1px;
-        font-size: 200%;
-        text-decoration:none;
+        background-color: #FFFFFF;
+        color: #C4C4C4;
+        cursor: pointer;
     }
 </style>
 <meta charset="utf-8">
 <title>滑稽科学上网 - 官网</title>
 <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 </head>
-<body onload="setOpacity()">
+<body onload="setOpacity()" oncontextmenu="return false;" onselectstart="return false">
     <!--背景-->
     <div style="position:absolute; width:100%; height:100%;z-index:-1; left:0; top:0;">      
         <img src="img/background.jpg" height="100%" width="100%" style="left:0; top:0;"> 
@@ -103,9 +89,10 @@
         <div style="position:absolute; width:100%; height:89%;z-index:-1; left:0px; top:7%; text-align:center; background: #00000077">  
             <br><br>
             <img src="img/UI.png" alt="UI" class="imgPlace2"><br><br>
-            <a href="https://raw.githubusercontent.com/Imontlaji/Scientific-Internet-/master/Release/Huaji-Scientific-Internet.exe"><img src="img/down.png" alt="Down" class="imgPlace3" width="157.5" height="60"></a> <br>
+            <!--<a href="https://raw.githubusercontent.com/Imontlaji/Scientific-Internet-/master/Release/Huaji-Scientific-Internet.exe"><img src="img/down.png" alt="Down" class="imgPlace3" width="157.5" height="60"></a> <br>0-->
+            <div class="button">下载</div>
             <b><font color=#FFFFFFF size=2px>版本：Ver.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更新时间：2018-11-18</font></b><br><br>
-            <font color=#FFFFFFF size=6px>易用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高速&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;稳定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;免费</b>
+            <b class="pt"><font>易用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高速&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;稳定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;免费</font></b>
         </div>       
         <!--分割线-->
         <div style="position:absolute; width:100%; height:6%; left:0; top:96%; text-align:center;">  
@@ -113,8 +100,8 @@
             </div>
         </div> 
         <!--狗贼-->
-        <div style="position:absolute; width:10%; height:10%; left:86%; top:85%;">
-            <font style="font-size:75%">特别感谢:</b><br>
+        <div style="position:absolute; width:10%; height:10%; left:86%; top:86%;">
+            <b class="important"><font>特别感谢:</font></b><br>
         </div>  
         <!--感谢-->
         <div style="position:absolute; width:10%; height:10%; left:94%; top:84%;">
@@ -122,13 +109,13 @@
             <img class="image1" src="img/gz.bmp" />
         </div> 
         <!--感谢-->
-        <div style="position:absolute; width:10%; height:10%; left:93%; top:92%;">
+        <div style="position:absolute; width:10%; height:10%; left:92.5%; top:92%;">
             <!--<a class="gz" href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=865886034&website=www.oicqzone.com">我是吴彦祖</a>-->
-            <a style="font-size: 75%;">我是吴彦祖</a>
+            <a style="color: white; font-size: 125%;">我是吴彦祖</a>
         </div>
         <!--防骗-->
-        <div style="position:absolute; width:300px; height:10%; left:2%; top:86%;">
-            <font style="font-size:75%" color="#FFFFFF">不要相信任何人售卖本科学上网软件 本软件完全免费</font>
+        <div style="position:absolute; width:300px; height:10%; left:2%; top:93%;">
+            <font style="font-size:80%"color=white>不要相信任何人售卖本科学上网软件 本软件完全免费</font>
         </div> 
         <!--版权-->
         <div style="position:absolute; width:100%; height:4%; left:16px; top:96%;">   
