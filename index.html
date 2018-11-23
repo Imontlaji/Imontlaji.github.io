@@ -2,6 +2,7 @@
 <html>
 <head>
 <script type="text/javascript">
+
     var alpha = 0;
     function setOpacity (){
         var oDiv = document.getElementById('mainui');
@@ -12,6 +13,27 @@
         }
     }
 </script>
+<script type="text/javascript"> 
+var items = document.getElementsByClassName("layer"); 
+document.addEventListener('mousemove', function (evt){ 
+var x = evt.clientX; 
+var y = evt.clientY; 
+//console.log(x); 
+var winWidth = window.innerWidth; 
+var winHeight = window.innerHeight; 
+var halfWidth = winWidth / 2; 
+var halfHeight = winHeight / 2; 
+var rx = x - halfWidth; 
+var ry = halfHeight - y; 
+var length = items.length; 
+var max = 30; 
+for (var i = 0 ; i < length ; i++) { 
+var dx = (items[i].getBoundingClientRect().width/max)*(rx / -halfWidth); 
+var dy = (items[i].getBoundingClientRect().height/max)*(ry / halfHeight); 
+items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate('+dx+'px,'+dy+'px)'; 
+} 
+}, false); 
+</script> 
 <style type="text/css">
     a.dw {color: #FFFFFF;text-decoration:none;font-size: 150%; opacity: 0.75; transition: all 0.2s linear;}
     a.dw:hover {opacity: 1;}	
@@ -26,6 +48,16 @@
     .image1{width:64px; height:64px; border-radius:200px; opacity: 0.5; transition: all 0.2s linear;}
     .image1:hover{opacity: 1;} 
     }
+    .layer { 
+    width:100%; 
+    height:100%; 
+    transa; 
+    } 
+    .A { 
+    position: absolute; 
+    top: -5%; 
+    left: -5%; 
+    } 
 </style>
 <style>
     body{    
@@ -63,14 +95,14 @@
 <title>滑稽科学上网 - 官网</title>
 <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 </head>
-<body onload="setOpacity()" oncontextmenu="return false;" onselectstart="return false">
+<body onload="setOpacity()" oncontextmenu="return false;" onselectstart="return false" >
     <!--背景-->
-    <div style="position:absolute; width:100%; height:100%;z-index:-1; left:0; top:0;">      
-        <img src="img/background.jpg" height="100%" width="100%" style="left:0; top:0;"> 
+    <div class="layer A" style="z-index:-1;">      
+        <img src="img/background.jpg" height="105%" width="105%" style="left:0; top:0;"> 
     </div>  
     <div style="position:absolute; width:100%; height:100%; left:0; top:0;" id="mainui">
     <!--标题-->
-        <div style="position:absolute; width:100%; height:6%; top:10px; left:0px;">    
+        <div style="position:absolute; width:100%; height:48px; top:8px; left:0px;">    
             <div style="position:absolute; width:175px; height:40px; left:10%;">  
                     <img src="img/title.png" alt="Huaji" width="175" height="40">    
             </div>
@@ -78,7 +110,7 @@
                 <a href="https://github.com/Imontlaji/Scientific-Internet-" class="dw">访问Github</a>    
             </div>
             <div style="position:absolute; width:175px; height:40px; left:82%; top:6px">  
-                <a href="https://imontlaji.github.io/Scientific-Internet-/" class="dw">更新日志</a>    
+                <a href="https://imontlaji.github.io/Updatalog.html" class="dw">更新日志</a>    
             </div>
             <div style="position:absolute; width:100%; height:1px; left:0px; top:96%">  
                 <div style="background: -webkit-linear-gradient(left,rgba(255,255,255,0.1) 0%,#FFFFFF 25%,#FFFFFF 75%,rgba(255,255,255,0.1) 100%); width:100%; height:1px;">
@@ -86,7 +118,7 @@
             </div>
         </div>  
         <!--中心-->
-        <div style="position:absolute; width:100%; height:89%;z-index:-1; left:0px; top:7%; text-align:center; background: #00000077">  
+        <div style="position:absolute; width:100%; height:89%;z-index:-1; left:0px; top:7%; text-align:center; background: #00000077;">  
             <br><br>
             <img src="img/UI.png" alt="UI" class="imgPlace2"><br><br>
             <!--<a href="https://raw.githubusercontent.com/Imontlaji/Scientific-Internet-/master/Release/Huaji-Scientific-Internet.exe"><img src="img/down.png" alt="Down" class="imgPlace3" width="157.5" height="60"></a> <br>0-->
