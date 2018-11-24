@@ -34,6 +34,12 @@ items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate('
 } 
 }, false); 
 </script> 
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+        /* 鼠标点击特效 - 7Core.CN */
+        var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": "#ff6651"});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});
+</script>
 <style type="text/css">
     a.dw {color: #FFFFFF;text-decoration:none;font-size: 150%; opacity: 0.75; transition: all 0.2s linear;}
     a.dw:hover {opacity: 1;}	
@@ -104,7 +110,7 @@ items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate('
     <!--标题-->
         <div style="position:absolute; width:100%; height:48px; top:8px; left:0px;">    
             <div style="position:absolute; width:175px; height:40px; left:10%;">  
-                    <img src="img/title.png" alt="Huaji" width="175" height="40">    
+                    <a href="https://imontlaji.github.io/"><img src="img/title.png" alt="Huaji" width="175" height="40"></a>
             </div>
             <div style="position:absolute; width:175px; height:40px; left:72%; top:6px">  
                 <a href="https://github.com/Imontlaji/Scientific-Internet-" class="dw">访问Github</a>    
