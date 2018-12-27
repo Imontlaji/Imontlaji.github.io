@@ -15,7 +15,7 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+  cursor: url("../HuajiScientificInternet_files/Huaji.cur"),auto;
 }
 
 header {
@@ -114,17 +114,18 @@ section .main {
 }
 
 section .main .card {
-  background: white;
+  background: rgba(255,255,255,0.80);
   padding: 20px 15px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0 0 4px 0 #CECECE;
           box-shadow: 0 0 4px 0 #CECECE;
-  transition: all 0.2s linear;
+  transition: -webkit-box-shadow,box-shadow,background 0.2s linear;
 }
 
 section .main .card:hover {
   -webkit-box-shadow: 0 0 4px 4px #E2A692;
           box-shadow: 0 0 4px 4px #E2A692;
+  background: rgba(255,255,255,1);
 }
 
 section .main .card .title {
@@ -140,26 +141,18 @@ section .main .card .text {
 
 .col-2 {
   width: 47%;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
 }
 
 .col-2:hover {
   width: 47%;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
 }
 
 .col-1 {
   width: 100% !important;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
 }
 
 .col-1:hover {
   width: 100% !important;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
 }
 
 ul.sidenav {
@@ -221,6 +214,10 @@ div.content {
 }
 
 @media (max-width: 1300px) {
+  .hoverdiv {
+	visibility: hidden;
+
+  }
   .col-2 {
     width: 100%;
   }
@@ -247,13 +244,20 @@ div.content {
   background-color: #FFFDEE;
   font-size: 14px;
 }
+
 .download {
+position: relative;
+left: 50%;
 color: #FFFFFF;
 text-decoration: none;
+margin-top: 10px;
+margin-bottom: 10px;
 font-size: 14px;
 opacity: 0.75;
-transition: all 0.2s linear;
+transition: opacity 0.2s linear;
 display: inline-block;
+transform: translate(-50%);
+cursor: url("../HuajiScientificInternet_files/HuajiPointer.cur"),auto;
 }
 
 .download:hover {
@@ -262,13 +266,13 @@ opacity: 1;
 
 .button {
 width: 200px;
-margin-top: 10px;
+margin-top: auto;
 margin-right: auto;
-margin-bottom: 10px;
+margin-bottom: auto;
 margin-left: auto;
 padding-top: 16px;
 padding-right: 10px;
-padding-bottom: 20px;
+padding-bottom: 16px;
 padding-left: 10px;
 text-align: center;
 vertical-align: middle;
@@ -285,7 +289,6 @@ transition: all 0.3s linear;
 .button:hover {
 background-color: #E2A692;
 color: #fff;
-cursor: pointer;
 }
 
 .hoverdiv{
@@ -293,6 +296,7 @@ position: fixed;
 bottom: 16px;
 right:16px;
 width: 64px;
+display: none;
 }
 
 .smallbutton {
@@ -300,7 +304,8 @@ background: rgba(255,255,255,0.00);
 height: 64px;
 width: 64px;
 border:white solid 2px;
-transition: all 0.2s ease-in-out;
+transition: background 0.2s ease-in-out;
+cursor: url("../HuajiScientificInternet_files/HuajiPointer.cur"),auto;
 }
 
 .smallbutton:hover {
@@ -324,10 +329,14 @@ font-size: 14px;
 opacity: 0.75;
 display: inline-block;
 text-align: center;
-transition: all 0.2s linear;
+transition: opacity 0.2s linear;
 }
 
 .copyright:hover {
 opacity: 1;
 }	
+
+a.customcursor {
+cursor: url("../HuajiScientificInternet_files/HuajiPointer.cur"),auto;
+}
 /*# sourceMappingURL=main.css.map */

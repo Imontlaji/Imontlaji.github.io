@@ -47,12 +47,8 @@
   <link rel="stylesheet" href="./HuajiScientificInternet_files/main.css">
   <script type="text/javascript" async="" src="./HuajiScientificInternet_files/analytics.js"></script><script async="" src="./HuajiScientificInternet_files/js"></script>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    /* 鼠标点击特效*/
-    var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("-1S");var $i = $("<span/>").text(a[a_idx]);
-    a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": "#ff6651"});$("body").append($i);$i.animate({"top": y - 180,"opacity":
-	0},1500,function() {$i.remove();});});});
-  </script>
+  <script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="./HuajiScientificInternet_files/GotoTop.js"></script><script type="text/javascript" src="./HuajiScientificInternet_files/ClickEffect.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -63,20 +59,22 @@
 <style>html, * {-webkit-user-select:text!important; -moz-user-select:text!important;}</style>
 </head>
 <body onselectstart="return false">
-  <div class="hoverdiv"><a class="buttontext" href="#top"><div class="smallbutton">回到<br>顶部</div></a></div>
+  <div onclick="gotoTop()" id="#totop" class="hoverdiv"><a class="buttontext"><div class="smallbutton">回到<br>顶部</div></a></div>
   <header>
-    <ul class="sidenav" id="#top">
-      <li><a class="active" href="#about">软件介绍</a></li>
-      <li><a href="#download">下载</a></li>
-      <li><a href="#about">致谢名单</a></li>
-      <li><a href="#feature">功能教程</a></li>
-      <li><a href="#release">更新内容</a></li>
-      <li><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1252343639&website=www.oicqzone.com" target="_blank">联系作者</a></li>
-      <li><a href="http://space.bilibili.com/100323697" target="_blank">来B站关注我一波？</a></li>
+    <ul id="#top" class="sidenav">
+      <li><a class="active customcursor" href="#about">软件介绍</a></li>
+      <li><a class="customcursor" href="#download">下载</a></li>
+      <li><a class="customcursor" href="#thanks">致谢名单</a></li>
+      <li><a class="customcursor" href="#feature">功能教程</a></li>
+      <li><a class="customcursor" href="#release">更新内容</a></li>
+      <!--target="_blank"-->
+      <li><a class="customcursor" href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1252343639&website=www.oicqzone.com">联系作者</a></li>
+      <li><a class="customcursor" href="http://space.bilibili.com/100323697" target="_blank">来B站关注我一波？</a></li>
     </ul>
     <div class="title">
       <div class="img-wrap">
         <img src="./img/Huaji.jpg" class="logo" alt="滑稽科学上网" width="200px">
+        
       </div>
       <h1 class="main-title">Huaji-Scientific-Internet</h1>
       <h2 class="sub-title">易用 - 高速 - 稳定 - 安全 - 免费</h2>
@@ -99,7 +97,7 @@
       </div>
 
       <div class="card col-2">
-        <div class="title">致谢名单</div>
+        <div id="thanks" class="title">致谢名单</div>
         <h2>特别感谢</h2>
             <div class="text"><b>·托福雅思 学习俱乐部</b></div>
 		    <div class="text"><b> &nbsp-[弗朗西斯]</b></div>
@@ -146,12 +144,12 @@
 
       <div id="release" class="card col-1">
         <div class="title">更新内容</div>
-        <h2>V8.0.178.181224_Release预览更新内容</h2>
+        <h2>V8.0.178.181224 预览更新内容</h2>
         <div class="text">-在软件界面新增了退出按钮</div>
         <div class="text">-在软件界面新增了查看公告按钮</div>
         <div class="text">-修复了启动加速的过程中，菜单项目仍然可以点选的问题</div>
         <div class="text">-优化了启动时的代码逻辑，实现更快速的启动</div>
-        <div class="text">-解决了BUG过少的BUG</div>
+        <div class="text">-增加了更多特性<s>[BUG]</s></div>
       </div>
     </div>
   </section>
