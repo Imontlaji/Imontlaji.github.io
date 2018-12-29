@@ -1,4 +1,4 @@
-var moving = 0;
+﻿var moving = 0;
 var header = document.getElementById("#header");
 var toptitle = document.getElementById("#top");
 var totop = document.getElementById("#totop");
@@ -11,16 +11,16 @@ function scrollFunction() {
     console.log();
     if (document.body.clientWidth > 1300) {
         roll = document.body.scrollTop || document.documentElement.scrollTop;
-        a = Math.max(parseInt(roll) / (header.offsetTop + header.clientHeight + 200), 0.8);
+        a = Math.max(parseInt(roll) / (header.offsetTop + header.clientHeight), 0.8);
         toptitle.style.opacity = a;
         if (moving === 0) {
             if (roll > header.offsetTop + header.clientHeight || roll > header.offsetTop + header.clientHeight) {
-                $(".smallbutton").fadeIn(500);
+                $(".smallbutton").fadeIn(150);
             } else {
-                $(".smallbutton").fadeOut(500);
+                $(".smallbutton").fadeOut(150);
             }
         } else {
-            $(".smallbutton").fadeOut(500);
+            $(".smallbutton").fadeOut(150);
         }
     } else {
         totop.style.display = "none";
@@ -58,24 +58,3 @@ function gotoTop(acceleration, stime) {
         moving = 0;
     }
 }
-
-//function gotoElement(id,acceleration,stime) {
-//   acceleration = acceleration || 0.1;
-//   stime = stime || 10;
-//  var y1 = $(id).offset().top;
-//  var x1,x2,y2;
-//   x2 = window.scrollX || 0;
-//   y2 = window.scrollY || 0;
-// 滚动条到页面顶部的水平距离
-//   var x = Math.max(x1, x2);
-// 滚动条到页面顶部的垂直距离
-//   var y = Math.max(y1, y2);
-// 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
-//   var speeding = 1 + acceleration;
-//   window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
-// 如果距离不为零, 继续调用函数
-//   if(y === y1) {
-//       var run = "gotoTop("+ id +"," + acceleration + ", " + stime + ")";
-//       window.setTimeout(run, stime);
-//   }
-//}
