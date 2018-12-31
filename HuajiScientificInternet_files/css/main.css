@@ -9,7 +9,7 @@ html, body {
     margin: 0;
 }
 body {
-    background-image: url("https://s1.ax1x.com/2018/12/29/FfNBgs.png");
+    background-image: url("./../../img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
