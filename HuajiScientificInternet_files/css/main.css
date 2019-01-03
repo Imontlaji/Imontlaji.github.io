@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-x: 50%;
     cursor: url("../cur/Huaji.cur"), auto;
     overflow-x: hidden;
     -moz-user-select: none;/*火狐*/
@@ -199,6 +200,9 @@ ul.sidenav li a {
 }
 .col-2:hover {
     width: 100%;
+}
+ul.sidenav {
+    position: relative;
 }
 }
 .copy-tips {
