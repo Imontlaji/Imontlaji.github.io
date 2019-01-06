@@ -117,4 +117,12 @@ body {
     font-size: 300%;
     transition: all 0.2s linear;
 }
+.mid {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background-color: rgba(20,20,20,0.50);
+    transform: translate(-50%, 0);
+}
 /*# sourceMappingURL=main.css.map */
