@@ -1,128 +1,218 @@
 ﻿@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
 }
-html, body {
+
+.bg {
+    position: fixed;
+    left: 0px;
+    top: 0px;
     width: 100%;
     height: 100%;
-    /*height: 2000px;*/
-    margin: 0;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    object-fit: cover;
+    z-index: -100;
 }
-body {
-    background-image: url("../../img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+html,body {
+    background-color: #000;
     overflow: hidden;
-    -moz-user-select: none;/*火狐*/
-    -webkit-user-select: none;/*webkit浏览器*/
-    -ms-user-select: none;/*IE10*/
-    -khtml-user-select: none;/*早期浏览器*/
-    user-select: none;
-    background-position-x: 50%;
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -khtml-user-select: none !important;
+    user-select: none !important;
+    opacity: 0.999;
 }
-.copyright {
-    left: 50%;
-    color: #ccc;
+
+.title {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 380px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.3;
+    font-family: "Microsoft YaHei";
+    box-sizing: border-box;
+    font-style: normal;
+    display: block;
+    margin: 48px 0px 16px;
+    text-shadow: 0px 0px 6px #000;
+}
+
+.subtitle { 
+    margin: 0px !important;
+    font-size: 18px !important;
+    
+}
+
+.mid {
     position: absolute;
-    margin-bottom: 20px;
+    width: 380px;
+    height: 440px;
+    margin-left: -190px;
+    margin-top: -250px;
+    top: 50%;
+    left: 50%;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    border-bottom: solid 1px #fff;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.325s;
+    animation-fill-mode: both;
+    animation-name: fadeInBottom;
+}
+
+.pic {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    border: solid 1px #fff;
+    border-radius: 40px;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    border-left: solid 1px #fff;
+}
+
+.indexlogo {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.indexlogo:hover {
+    transform: rotate(360deg);
+}
+
+nbody {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    height: 188px; 
+    animation-delay: 0.575s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.325s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+footer {
+    border-top: solid 1px #fff;
+    position: absolute;
+    width: 100%;
+    top: 338px;
+    height: 100px;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.325s;
+    animation-fill-mode: both;
+    animation-name: fadeInTop;
+}
+
+.footerBotton {
+    width: 120px;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    background: rgba(255,255,255,0);
+    transition: background 0.1s ease-in-out;
+    text-shadow: 0px 0px 6px #000;
+}
+
+.footerBotton:hover {
+    text-shadow: 0px 0px 8px #000;
+    background: rgba(255,255,255,0.50);
+}
+
+.left {
+    border-left: solid 1px #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.right {
+    border-right: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.link {
+    position: absolute;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+@keyframes fadeInTop {
+  from {
+    transform: translate3d(0, -94px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    transform: translate3d(0, 94px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.999;
+  }
+}
+
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 14px;
     opacity: 0.75;
     display: inline-block;
     text-align: center;
-    transform: translate(-50%);
-    transition: opacity 0.2s linear;
-    bottom: 0px;
+    transition: opacity 0.1s linear;
 }
 .copyright:hover {
     opacity: 1;
 }
-.choose1 {
-    position: absolute;
-    top: 0px;
-    width: 50%;
-    height: 100%;
-    z-index: 50;
-    background: rgba(20,20,20,0);
-    transition: all 0.2s linear;
-    cursor: pointer;
-}
-.choose1:hover {
-    background: rgba(20,20,20,0.5);
-}
-.choose2 {
-    left: 50%;
-    position: absolute;
-    top: 0px;
-    width: 50%;
-    height: 100%;
-    z-index: 50;
-    background: rgba(20,20,20,0);
-    transition: all 0.2s linear;
-    cursor: pointer;
-}
-.choose2:hover {
-    background: rgba(20,20,20,0.5);
-}
-.choose1:hover .title {
-    color: #fff;
-    left: 20%;
-}
-.choose2:hover .title {
-    color: #fff;
-    left: -20%;
-}
-.choose1:hover ~ .maintitle1 {
-    color: #fff;
-}
-.choose2:hover ~ .maintitle2 {
-    color: #fff;
-}
-.title {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-family: "微软雅黑";
-    color: #888;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 300%;
-    transition: all 0.2s linear;
-}
-.maintitle1 {
-    position: absolute;
-    left: 0%;
-    width: 50%;
-    top: 10%;
-    font-family: "微软雅黑";
-    color: #888;
-    text-align: right;
-    vertical-align: middle;
-    font-size: 300%;
-    transition: all 0.2s linear;
-}
-.maintitle2 {
-    position: absolute;
-    left: 50%;
-    width: 50%;
-    top: 10%;
-    font-family: "微软雅黑";
-    color: #888;
-    text-align: left;
-    vertical-align: middle;
-    font-size: 300%;
-    transition: all 0.2s linear;
-}
-.mid {
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    width: 4px;
-    background-color: rgba(20,20,20,0.50);
-    transform: translate(-50%, 0);
-}
-/*# sourceMappingURL=main.css.map */
+/*90px*/

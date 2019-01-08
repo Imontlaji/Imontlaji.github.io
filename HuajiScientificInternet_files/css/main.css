@@ -1,12 +1,14 @@
 ﻿@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
 }
 html, body {
+    font-family: "Source Sans Pro", sans-serif;
     width: 100%;
     /*height: 2000px;*/
-    margin: 0;
+    margin:0;
 }
 body {
     background-image: url("https://api.ixiaowai.cn/api/api.php");
@@ -16,11 +18,11 @@ body {
     background-position-x: 50%;
     cursor: url("../cur/Huaji.cur"), auto;
     overflow-x: hidden;
-    -moz-user-select: none;/*火狐*/
-    -webkit-user-select: none;/*webkit浏览器*/
-    -ms-user-select: none;/*IE10*/
-    -khtml-user-select: none;/*早期浏览器*/
-    user-select: none;
+    -moz-user-select: none !important;/*火狐*/
+    -webkit-user-select: none !important;/*webkit浏览器*/
+    -ms-user-select: none !important;/*IE10*/
+    -khtml-user-select: none !important;/*早期浏览器*/
+    user-select: none !important;
 }
 header {
     position: relative;
@@ -29,7 +31,7 @@ header {
     overflow: visible;
 }
 header .title {
-    border-bottom: 1px dashed #E2A692;
+    border-bottom: 1px dashed #D67E7D;
 }
 header .title .img-wrap {
     text-align: center;
@@ -38,11 +40,11 @@ header .title .main-title {
     text-align: center;
     font-size: 60px;
     font-family: "Microsoft YaHei";
-    color: #E2A692;
+    color: #D67E7D;
 }
 header .title .sub-title {
     text-align: center;
-    color: #E2A692;
+    color: #D67E7D;
     margin-bottom: 14px;
 }
 header .logo {
@@ -76,8 +78,8 @@ header .bt-group .bt:last-child {
     margin-right: 0;
 }
 header .bt-group .bt:hover {
-    -webkit-box-shadow: 0 0 5px 5px #E2A692;
-    box-shadow: 0 0 5px 5px #E2A692;
+    -webkit-box-shadow: 0 0 5px 5px #D67E7D;
+    box-shadow: 0 0 5px 5px #D67E7D;
     border-radius: 5px;
 }
 header .bt-group .bt a {
@@ -112,15 +114,15 @@ section .main .card {
     transition: -webkit-box-shadow, box-shadow, background 0.2s linear;
 }
 section .main .card:hover {
-    -webkit-box-shadow: 0 0 4px 4px #E2A692;
-    box-shadow: 0 0 4px 4px #E2A692;
+    -webkit-box-shadow: 0 0 4px 4px #D67E7D;
+    box-shadow: 0 0 4px 4px #D67E7D;
     background: rgba(255,255,255,1);
 }
 section .main .card .title {
     margin-bottom: 20px;
     padding-left: 10px;
     font-size: 22px;
-    border-left: 4px solid #E2A692;
+    border-left: 4px solid #D67E7D;
 }
 section .main .card .text {
     margin: 10px 0;
@@ -271,12 +273,12 @@ ul.sidenav {
     font-weight: bold;
     font-size: 130%;
     letter-spacing: 2px;
-    border: 3px solid #E2A692;
-    color: #E2A692;
+    border: 3px solid #D67E7D;
+    color: #D67E7D;
     transition: all 0.3s linear;
 }
 .button:hover {
-    background-color: #E2A692;
+    background-color: #D67E7D;
     color: #fff;
 }
 .smallbutton {
@@ -311,7 +313,7 @@ ul.sidenav {
     display: inline-block;
     text-align: center;
     transform: translate(-50%);
-    transition: opacity 0.2s linear;
+    transition: opacity 0.1s linear;
     cursor: url("../cur/HuajiPointer.cur"), auto;
 }
 .copyright:hover {
@@ -328,7 +330,7 @@ a.customcursor {
 /*定义滑块 内阴影+圆角*/  
 ::-webkit-scrollbar-thumb {
  border-radius: 10px;  /*滚动条的圆角*/
- background-color: 	#E2A692  /*滚动条的背景颜色*/
+ background-color: 	#D67E7D  /*滚动条的背景颜色*/
 }
 input[type="text"] {
     font-family: "微软雅黑";
