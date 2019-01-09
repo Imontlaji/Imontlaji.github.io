@@ -11,7 +11,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    animation-delay: 1s;
+    animation-delay: 1.25s;
     animation-timing-function: ease-out;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -100,11 +100,7 @@ header {
     top: 16px;
     width: 48px;
     height: 48px;
-    transition: transform 0.7s ease-in-out;
-}
-
-.indexlogo:hover {
-    transform: rotate(360deg);
+    animation:logorot 2.5s 2s infinite linear ;
 }
 
 nbody {
@@ -150,6 +146,22 @@ footer {
     background: rgba(255,255,255,0.50);
 }
 
+.footerLeft {
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+
+.footerRight {
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+}
+
 .left {
     border-left: solid 1px #fff;
     border-top-left-radius: 5px;
@@ -190,6 +202,30 @@ footer {
   }
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+
+  to {
+    opacity: 0.999;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  to {
+    opacity: 0.999;
+    transform: none;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -197,6 +233,16 @@ footer {
 
   to {
     opacity: 0.999;
+  }
+}
+
+@keyframes logorot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
