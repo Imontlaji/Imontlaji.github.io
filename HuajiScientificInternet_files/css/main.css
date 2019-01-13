@@ -18,10 +18,10 @@ body {
     background-position-x: 50%;
     cursor: url("../cur/Huaji.cur"), auto;
     overflow-x: hidden;
-    -moz-user-select: none !important;/*火狐*/
-    -webkit-user-select: none !important;/*webkit浏览器*/
-    -ms-user-select: none !important;/*IE10*/
-    -khtml-user-select: none !important;/*早期浏览器*/
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -khtml-user-select: none !important;
     user-select: none !important;
 }
 header {
