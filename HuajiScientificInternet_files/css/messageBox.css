@@ -94,7 +94,7 @@
     line-height: 26px;
     background-color: #DE5923;
     color: white;
-    cursor: url("../HuajiScientificInternet_files/HuajiPointer.cur"), auto;
+    cursor: pointer;
     text-align: center;
     border-radius: 2px;
     text-decoration: none;
@@ -103,7 +103,9 @@
 }
 .window-panel .w-btn:hover {
     background-color: #DA3E00;
+    cursor: pointer;
 }
 .window-panel .w-btn:focus {
     outline: 0 none;
+    cursor: pointer;
 }

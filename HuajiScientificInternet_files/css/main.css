@@ -11,7 +11,7 @@ html, body {
     margin:0;
 }
 body {
-    background-image: url("https://api.ixiaowai.cn/api/api.php");
+    background-image: url("../../img/background2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
