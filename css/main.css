@@ -1,0 +1,311 @@
+::-webkit-scrollbar {
+ width: 5px;  /*滚动条宽度*/
+}
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb {
+ border-radius: 5px;  /*滚动条的圆角*/
+ background-color: 	rgb(53,103,212)  /*滚动条的背景颜色*/
+}
+header {
+    position: fixed;
+    background: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    box-shadow: 0px 4px 6px 2px #ccc;
+    padding-left: 32px;
+    z-index: 100;
+}
+body {
+    background: rgb(247,248,250);
+    font-family: "微软雅黑";
+    opacity: 0.95;
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -khtml-user-select: none !important;
+    user-select: none !important;
+    overflow-x: hidden;
+}
+.down {
+    position: relative;
+    top: 64px;
+    left: 0px;
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/background3.png);
+    background-color: rgb(247,248,250);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    transition: all 0.8s ease-in-out;
+    border-bottom: solid 1px #ccc;
+}
+.down:hover {
+    background-size: 115% auto;
+}
+.title {
+    height: 64px;
+    line-height: 64px;
+    font-size: 28px;
+}
+.logo {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+}
+.link {
+    text-decoration: none;
+    color: #000;
+}
+.container {
+    position: relative;
+    top: 140px;
+    height: 400px;
+    width: 500px;
+}
+.center {
+    margin: auto;
+}
+.midlogo {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 16px;
+}
+.midtitle {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 100;
+    text-align: center;
+}
+.subtitle {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+.download {
+    margin-top: 16px;
+    position: relative;
+    line-height: 48px;
+    height: 48px;
+    width: 160px;
+    color: #fff;
+    background: rgb(53,103,212);
+    display: inline-block;
+    border-radius: 4px;
+}
+.download:hover {
+    background: rgb(63,113,222);
+}
+.about {
+    position: relative;
+    top: 64px;
+    left: 0px;
+    height: 460px;
+    width: 100%;
+    background-color: rgb(247,248,250);
+    border-bottom: solid 1px #ccc;
+}
+.about2 {
+    position: relative;
+    top: 64px;
+    left: 0px;
+    height: 760px;
+    width: 100%;
+    background-color: rgb(247,248,250);
+    border-bottom: solid 1px #ccc;
+}
+.col {
+    padding-top: 32px;
+    box-shadow: 0px 0px 5px #ccc;
+    border: solid 1px #ccc;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    height: 300px;
+    width: 25%;
+    margin: 0px;
+    display: inline-block;
+    background-color: rgb(247,248,250);
+    padding: 16px;
+}
+.col:hover {
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 5px #ddd;
+}
+.fadeIn1 {
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInBottom;
+}
+.fadeIn2 {
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+.fadeIn3 {
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+}
+.midcol {
+    left: calc(37.5% - 17px);
+    animation-delay: 0.325s;
+}
+.rightcol {
+    left: auto;
+    right: 64px;
+    animation-delay: 0.65s;
+}
+@keyframes fadeInBottom {
+ from {
+ opacity: 0;
+ transform: translate3d(0, 100px, 0px);
+}
+ to {
+ opacity: 0.95;
+ transform: none;
+}
+}
+@keyframes fadeInLeft {
+ from {
+ opacity: 0;
+ transform: translate3d(100px, 0px, 0px);
+}
+ to {
+ opacity: 0.95;
+ transform: none;
+}
+}
+@keyframes fadeInRight {
+ from {
+ opacity: 0;
+ transform: translate3d(-100px, 0px, 0px);
+}
+ to {
+ opacity: 0.95;
+ transform: none;
+}
+}
+.line {
+    position: relative;
+    top: 64px;
+    left: 0px;
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/background3.png);
+    background-color: rgb(247,248,250);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    transition: all 0.8s ease-in-out;
+    border-bottom: solid 1px #ccc;
+}
+.line:hover {
+    background-size: 115% auto;
+}
+.col2 {
+    padding-top: 32px;
+    box-shadow: 0px 0px 5px #ccc;
+    border: solid 1px #ccc;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    height: 600px;
+    width: 40%;
+    margin: 0px;
+    display: inline-block;
+    background-color: rgb(247,248,250);
+    padding: 16px;
+}
+.col2:hover {
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 5px #ddd;
+}
+.rightcol2 {
+    left: auto;
+    right: 64px;
+}
+
+@media screen and (max-width: 800px) {
+.col {
+    left: 2%;
+    width: 90%;
+}
+.midcol {
+    top: 420px;
+    left: 2%;
+}
+.rightcol {
+    top: 774px;
+    left: 2%;
+    right: auto;
+}
+.about {
+    height: 1140px;
+}
+.about2 {
+    height: 1440px;
+}
+.col2 {
+    left: 2%;
+    width: 90%;
+}
+.rightcol2 {
+    top: 770px;
+    left: 2%;
+    right: auto;
+}
+.down {
+    background-size: auto 100%;
+}
+.down:hover {
+    background-size: auto 115%;
+}
+.line {
+    background-size: auto 100%;
+}
+.line:hover {
+    background-size: auto 115%;
+}
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 96px;
+    box-shadow: 0px -4px 6px 2px #ccc;
+    background: #fff;
+}
+.footerlink {
+    position: relative;
+    top: 24px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+}
+.mtext:first-letter{}
