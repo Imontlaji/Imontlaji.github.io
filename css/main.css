@@ -125,7 +125,7 @@ body {
     position: relative;
     top: 64px;
     left: 0px;
-    height: 760px;
+    height: 780px;
     width: 100%;
     background-color: rgb(247,248,250);
     border-bottom: solid 1px #ccc;
@@ -234,7 +234,7 @@ body {
     position: absolute;
     top: 64px;
     left: 64px;
-    height: 600px;
+    height: 620px;
     width: 40%;
     margin: 0px;
     display: inline-block;
@@ -249,8 +249,12 @@ body {
     left: auto;
     right: 64px;
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
+    #ali {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
 .col {
     left: 2%;
     width: 90%;
@@ -265,17 +269,17 @@ body {
     right: auto;
 }
 .about {
-    height: 1140px;
+    height: 1160px;
 }
 .about2 {
-    height: 1440px;
+    height: 1500px;
 }
 .col2 {
     left: 2%;
     width: 90%;
 }
 .rightcol2 {
-    top: 770px;
+    top: 790px;
     left: 2%;
     right: auto;
 }
@@ -291,6 +295,9 @@ body {
 .line:hover {
     background-size: auto 115%;
 }
+    #footerlogo  {
+        display: none;
+    }
 }
 footer {
     position: relative;
