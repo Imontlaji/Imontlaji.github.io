@@ -37,16 +37,13 @@ body {
     width: 100%;
     background-image: url(../img/background3.png);
     background-color: rgb(247,248,250);
-    background-size: 100% auto;
+    background-size: 115% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 50%;
     transition: all 0.8s ease-in-out;
     border-bottom: solid 1px #ccc;
-}
-.down:hover {
-    background-size: 115% auto;
 }
 .title {
     height: 64px;
@@ -223,9 +220,6 @@ body {
     background-position-y: 50%;
     transition: all 0.8s ease-in-out;
     border-bottom: solid 1px #ccc;
-}
-.line:hover {
-    background-size: 115% auto;
 }
 .col2 {
     padding-top: 32px;
