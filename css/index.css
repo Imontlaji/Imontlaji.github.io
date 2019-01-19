@@ -28,7 +28,7 @@ html,body {
     -ms-user-select: none !important;
     -khtml-user-select: none !important;
     user-select: none !important;
-    opacity: 0.999;
+    opacity: 0.95;
 }
 
 .title {
@@ -209,7 +209,7 @@ footer {
   }
 
   to {
-    opacity: 0.999;
+    opacity: 0.95;
     transform: none;
   }
 }
@@ -221,7 +221,7 @@ footer {
   }
 
   to {
-    opacity: 0.999;
+    opacity: 0.95;
     transform: none;
   }
 }
@@ -232,7 +232,7 @@ footer {
   }
 
   to {
-    opacity: 0.999;
+    opacity: 0.95;
   }
 }
 
