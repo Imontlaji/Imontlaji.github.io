@@ -1,26 +1,19 @@
 ﻿@charset "UTF-8";
-
 * {
     margin: 0;
     padding: 0;
 }
-
 .bg {
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
-    animation-delay: 1.25s;
-    animation-timing-function: ease-out;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-name: fadeIn;
     object-fit: cover;
     z-index: -100;
+    background-color: white;
 }
-
-html,body {
+html, body {
     background-color: #000;
     overflow: hidden;
     -moz-user-select: none !important;
@@ -28,9 +21,8 @@ html,body {
     -ms-user-select: none !important;
     -khtml-user-select: none !important;
     user-select: none !important;
-    opacity: 0.999;
+    opacity: .999;
 }
-
 .title {
     position: relative;
     left: 0px;
@@ -49,13 +41,10 @@ html,body {
     margin: 48px 0px 16px;
     text-shadow: 0px 0px 6px #000;
 }
-
-.subtitle { 
+.subtitle {
     margin: 0px !important;
     font-size: 18px !important;
-    
 }
-
 .mid {
     position: absolute;
     width: 380px;
@@ -65,18 +54,16 @@ html,body {
     top: 50%;
     left: 50%;
 }
-
 header {
     width: 100%;
     height: 150px;
     border-bottom: solid 1px #fff;
-    animation-delay: 0.25s;
+    animation-delay: .25s;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.325s;
+    animation-duration: .325s;
     animation-fill-mode: both;
     animation-name: fadeInBottom;
 }
-
 .pic {
     position: absolute;
     left: 50%;
@@ -87,47 +74,42 @@ header {
     border: solid 1px #fff;
     border-radius: 40px;
 }
-
 .line {
     position: absolute;
     left: 50%;
     border-left: solid 1px #fff;
 }
-
 .indexlogo {
     position: absolute;
     left: 16px;
     top: 16px;
     width: 48px;
     height: 48px;
-    animation:logorot 2.5s 2s infinite linear ;
+    animation: logorot 2.5s 2s infinite ease-in-out;
 }
-
 nbody {
     position: absolute;
     width: 100%;
     top: 150px;
-    height: 188px; 
-    animation-delay: 0.575s;
+    height: 188px;
+    animation-delay: .575s;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.325s;
+    animation-duration: .325s;
     animation-fill-mode: both;
     animation-name: fadeIn;
 }
-
 footer {
     border-top: solid 1px #fff;
     position: absolute;
     width: 100%;
     top: 338px;
     height: 100px;
-    animation-delay: 0.25s;
+    animation-delay: .25s;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.325s;
+    animation-duration: .325s;
     animation-fill-mode: both;
     animation-name: fadeInTop;
 }
-
 .footerBotton {
     width: 120px;
     height: 48px;
@@ -137,128 +119,159 @@ footer {
     border-top: solid 1px #fff;
     border-bottom: solid 1px #fff;
     background: rgba(255,255,255,0);
-    transition: background 0.1s ease-in-out;
+    transition: background .1s ease-in-out;
     text-shadow: 0px 0px 6px #000;
 }
-
 .footerBotton:hover {
     text-shadow: 0px 0px 8px #000;
-    background: rgba(255,255,255,0.50);
+    background: rgba(255,255,255,.50);
 }
-
-.footerLeft {
-    animation-delay: 0.8s;
+.allFade {
+    animation-delay: .8s;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.25s;
+    animation-duration: .25s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+.footerLeft {
+    animation-delay: .8s;
+    animation-timing-function: ease-in-out;
+    animation-duration: .25s;
     animation-fill-mode: both;
     animation-name: fadeInLeft;
 }
-
 .footerRight {
-    animation-delay: 0.8s;
+    animation-delay: .8s;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.25s;
+    animation-duration: .25s;
     animation-fill-mode: both;
     animation-name: fadeInRight;
 }
-
 .left {
     border-left: solid 1px #fff;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-
 .right {
     border-right: solid 1px #fff;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
 .link {
     position: absolute;
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
     font-size: 14px;
     display: inline-block;
 }
-
-@keyframes fadeInTop {
-  from {
-    transform: translate3d(0, -94px, 0px);
-  }
-
-  to {
-    transform: none;
-  }
+ @keyframes fadeInTop {
+ from {
+ transform: translate3d(0, -94px, 0px);
 }
-
-@keyframes fadeInBottom {
-  from {
-    transform: translate3d(0, 94px, 0);
-  }
-
-  to {
-    transform: none;
-  }
+ to {
+ transform: none;
 }
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(50px, 0, 0);
-  }
-
-  to {
-    opacity: 0.999;
-    transform: none;
-  }
 }
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(-50px, 0, 0);
-  }
-
-  to {
-    opacity: 0.999;
-    transform: none;
-  }
+ @keyframes fadeInBottom {
+ from {
+ transform: translate3d(0, 94px, 0);
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.999;
-  }
+ to {
+ transform: none;
 }
-
-@keyframes logorot {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
-
+ @keyframes fadeInLeft {
+ from {
+ opacity: 0;
+ transform: translate3d(50px, 0, 0);
+}
+ to {
+ opacity: .999;
+ transform: none;
+}
+}
+ @keyframes fadeInRight {
+ from {
+ opacity: 0;
+ transform: translate3d(-50px, 0, 0);
+}
+ to {
+ opacity: .999;
+ transform: none;
+}
+}
+ @keyframes fadeIn {
+ from {
+ opacity: 0;
+}
+ to {
+ opacity: .999;
+}
+}
+ @keyframes logorot {
+ 50% {
+ transform: rotate(-30deg);
+}
+ 70% {
+ transform: rotate(390deg);
+}
+ 80% {
+ transform: rotate(360deg);
+}
+ 100% {
+ transform: rotate(360deg);
+}
+}
 .copyright {
     position: absolute;
     bottom: 20px;
     width: 100%;
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
     font-size: 14px;
-    opacity: 0.75;
+    opacity: .75;
     display: inline-block;
     text-align: center;
-    transition: opacity 0.1s linear;
+    transition: opacity .1s linear;
 }
 .copyright:hover {
     opacity: 1;
 }
 /*90px*/
+.BGBlock {
+    position: absolute;
+    left: 0;
+    background: black;
+    z-index: -99;
+    opacity: 1;
+    animation-delay: 1.2s;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.BGTop {
+    top: 0;
+    width: 100%;
+    height: calc(50% + 250px);
+    shape-outside: polygon(100% 0, 100% 100%, 0 calc(0% + 150px), 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 calc(0% + 150px), 0 0);
+    animation-name: BGfadeInBottom;
+}
+.BGBottom {
+    top: calc(50% - 250px);
+    width: 100%;
+    height: calc(50% + 250px);
+    shape-outside: polygon(0 0, 0 100%, 100% 100%, 100% calc(100% - 150px));
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% calc(100% - 150px));
+    animation-name: BGfadeInTop;
+}
+@keyframes BGfadeInTop { /*#00c8ff*/
+100% {
+top: 100%;
+}
+}
+@keyframes BGfadeInBottom {
+100% {
+top: calc(-50% - 250px);
+}
+}

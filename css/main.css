@@ -21,7 +21,7 @@ header {
 body {
     background: rgb(247,248,250);
     font-family: "微软雅黑";
-    opacity: 0.95;
+    opacity: .95;
     -moz-user-select: none !important;
     -webkit-user-select: none !important;
     -ms-user-select: none !important;
@@ -42,7 +42,7 @@ body {
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 50%;
-    transition: all 0.8s ease-in-out;
+    transition: all .8s ease-in-out;
     border-bottom: solid 1px #ccc;
 }
 .title {
@@ -148,32 +148,32 @@ body {
 .fadeIn1 {
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
-    animation-duration: 0.5s;
+    animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInBottom;
 }
 .fadeIn2 {
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
-    animation-duration: 0.5s;
+    animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInLeft;
 }
 .fadeIn3 {
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
-    animation-duration: 0.5s;
+    animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInRight;
 }
 .midcol {
     left: calc(37.5% - 17px);
-    animation-delay: 0.325s;
+    animation-delay: .325s;
 }
 .rightcol {
     left: auto;
     right: 64px;
-    animation-delay: 0.65s;
+    animation-delay: .65s;
 }
 @keyframes fadeInBottom {
  from {
@@ -181,7 +181,7 @@ body {
  transform: translate3d(0, 100px, 0px);
 }
  to {
- opacity: 0.95;
+ opacity: .95;
  transform: none;
 }
 }
@@ -191,7 +191,7 @@ body {
  transform: translate3d(100px, 0px, 0px);
 }
  to {
- opacity: 0.95;
+ opacity: .95;
  transform: none;
 }
 }
@@ -201,7 +201,7 @@ body {
  transform: translate3d(-100px, 0px, 0px);
 }
  to {
- opacity: 0.95;
+ opacity: .95;
  transform: none;
 }
 }
@@ -209,7 +209,7 @@ body {
     position: relative;
     top: 64px;
     left: 0px;
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-image: url(../img/background3.png);
     background-color: rgb(247,248,250);
@@ -218,7 +218,7 @@ body {
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 50%;
-    transition: all 0.8s ease-in-out;
+    transition: all .8s ease-in-out;
     border-bottom: solid 1px #ccc;
 }
 .col2 {
@@ -243,11 +243,19 @@ body {
     left: auto;
     right: 64px;
 }
+
 @media screen and (max-width: 1050px) {
-    #ali {
-        display: none;
-    }
+#ali {
+    display: none;
 }
+}
+
+@media screen and (max-width: 500px) {
+.container {
+    width: 100vw;
+}
+}
+
 @media screen and (max-width: 900px) {
 .col {
     left: 2%;
@@ -289,9 +297,9 @@ body {
 .line:hover {
     background-size: auto 115%;
 }
-    #footerlogo  {
-        display: none;
-    }
+#footerlogo {
+    display: none;
+}
 }
 footer {
     position: relative;
@@ -309,4 +317,5 @@ footer {
     font-weight: 400;
     padding: 8px;
 }
-.mtext:first-letter{}
+.mtext:first-letter {
+}
