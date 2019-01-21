@@ -1,5 +1,4 @@
-﻿@charset "UTF-8";
-* {
+﻿* {
     margin: 0;
     padding: 0;
 }
@@ -237,7 +236,6 @@ footer {
 .copyright:hover {
     opacity: 1;
 }
-/*90px*/
 .BGBlock {
     position: absolute;
     left: 0;
