@@ -1,0 +1,42 @@
+body {
+    background: rgb(247,248,250);
+}
+.list {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 460px;
+    width: 100%;
+}
+@media screen and (max-width: 900px) {
+.list {
+    height: 1080px;
+}
+}
+.notuse {
+    text-decoration: none;
+    margin-top: 16px;
+    position: relative;
+    line-height: 48px;
+    height: 48px;
+    width: 160px;
+    color: #fff;
+    background: #777;
+    display: inline-block;
+    border-radius: 4px;
+}
+.fadeIn {
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-duration: .75s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .95;
+    }
+}
